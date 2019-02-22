@@ -109,12 +109,12 @@ password=$(cat /dev/urandom | tr -dc A-Za-z0-9 | head -c 12)
 
 ```
 while test -e "$name$num.txt"; do
-		if [ password != $(echo $name$num.txt)  ]; then
-			((num++))
-		else
-			flag=1
-			break
-		fi
+	if [ password != $(echo $name$num.txt)  ]; then
+		((num++))
+	else
+		flag=1
+		break
+	fi
 done
 ```
 - Blok loop ini akan mengecek semua file beserta isinya. Loop akan berhenti ketika ada __file yang hilang/tidak ada__ baik di tengah jalan maupun di akhir (`test -e "$name$num.txt"`), atau __password yang baru kita generate sama dengan isi salah satu file__.
@@ -122,10 +122,10 @@ done
 
 ```
 if [ $flag ]; then
-		echo $num $password
-		filename="$name$num.txt"
-		echo $password > $filename
-		break
+	echo $num $password
+	filename="$name$num.txt"
+	echo $password > $filename
+	break
 fi
 ```
 - Terakhir, jika setelah dicek keseluruhan file yang ada dan tidak ditemukan adanya password yang sama, maka akan dibuat file berisi variabel `password`.
