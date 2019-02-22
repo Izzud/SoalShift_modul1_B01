@@ -1,7 +1,6 @@
 #!/bin/bash
 
 unzip nature.zip
-
 cd nature/
 
 for f in *.jpg 
