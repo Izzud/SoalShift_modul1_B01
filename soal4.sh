@@ -1,6 +1,6 @@
 #!/bin/bash
 
-key=$(date +"%H")
+key=$(date +"%k")
 
 input="/var/log/syslog"
 
