@@ -16,4 +16,4 @@ upper=$(echo $lower | tr [a-z] [A-Z])
 
 output=$(date +"%H:%M %d-%m-%Y")
 
-cat $input | tr [${lower:26}${upper:26}] [${lower:$key:26}${upper:$key:26}] > "$output"
+cat $input | tr [${lower:26}${upper:26}] [${lower:$key:26}${upper:$key:26}] > no-4/"$output"
