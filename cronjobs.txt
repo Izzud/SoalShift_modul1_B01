@@ -21,7 +21,7 @@
 # 
 # m h  dom mon dow   command
 
-14 14 14 2 * /bin/bash ~/Documents/SoalShift_modul1_B01/soal1.sh
-14 14 * 2 5 /bin/bash ~/Documents/SoalShift_modul1_B01/soal1.sh
-0 * * * * /bin/bash ~/Documents/SoalShift_modul1_B01/soal4.sh
-2-30/6 * * * * /bin/bash ~/Documents/SoalShift_modul1_B01/soal5.sh
+14 14 14 2 * /bin/bash /home/izzud/soal1.sh
+14 14 * 2 5 /bin/bash /home/izzud/soal1.sh
+0 * * * * /bin/bash /home/izzud/soal4.sh
+2-30/6 * * * * /bin/bash /home/izzud/soal5.sh
