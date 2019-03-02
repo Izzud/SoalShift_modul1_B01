@@ -22,6 +22,9 @@ Langkah - langkah :
 
 `14 14 * 2 5 /bin/bash /home/izzud/soal1.sh` --> artinya setiap pukul 14:14 setiap hari jumat di bulan februari
 
+![alt text](https://github.com/Izzud/SoalShift_modul1_B01/blob/master/img/1-1.png)
+![alt text](https://github.com/Izzud/SoalShift_modul1_B01/blob/master/img/1-2.png)
+
 <h5> Berikut source code <a href="https://github.com/Izzud/SoalShift_modul1_B01/blob/master/soal1.sh"> soal nomer 1 </a></h5>
 
 <br>
