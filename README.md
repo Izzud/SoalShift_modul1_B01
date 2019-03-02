@@ -68,6 +68,8 @@ langkah - langkah :
   - kemudian jika semua data yang memenuhi kondisi if sudah ditemukan dan dihitung, quantity diurutkan dari yang paling besar dengan `sort -nr` 
   - kemudian diambil tiga data teratas dengan `head -3` lalu di print quantity beserta nama <i>Product</i> nya.
 
+![alt text](https://github.com/Izzud/SoalShift_modul1_B01/blob/master/img/2-1.png)
+
 <h5> Berikut source code <a href="https://github.com/Izzud/SoalShift_modul1_B01/blob/master/soal2.sh"> soal nomer 2 </a></h5>
 
 <br>
@@ -133,6 +135,10 @@ fi
 ```
 - Terakhir, jika setelah dicek keseluruhan file yang ada dan tidak ditemukan adanya password yang sama, maka akan dibuat file berisi variabel `password`.
 
+![alt text](https://github.com/Izzud/SoalShift_modul1_B01/blob/master/img/3-1.png)
+![alt text](https://github.com/Izzud/SoalShift_modul1_B01/blob/master/img/3-2.png)
+![alt text](https://github.com/Izzud/SoalShift_modul1_B01/blob/master/img/3-3.png)
+
 ###### [Script no 3](../blob/master/SoalShift_modul1_B01/soal3.sh)
 
 <br>
@@ -188,6 +194,9 @@ cat $input | tr [${lower:26}${upper:26}] [${lower:$key:26}${upper:$key:26}] > no
 
 - Sedangkan `${lower:$key:26}` berisi karakter mulai dari karakter ke-`$key` sampai `$key`+25. Misal key=2, dan lower =`abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz` maka `${lower:$key:26}`berisi **cdefghijklmnopqrstuvwxyzab**
 
+![alt text](https://github.com/Izzud/SoalShift_modul1_B01/blob/master/img/4-1.png)
+![alt text](https://github.com/Izzud/SoalShift_modul1_B01/blob/master/img/4-2.png)
+
 ###### [Script no 4](../blob/master/SoalShift_modul1_B01/soal4.sh)
 
 <br>
@@ -210,6 +219,8 @@ fi
 + `output="$fname [decrypted]"` format file output, sama seperti file input hanya saja diberi tambahan string `[decrypted]`
 + `tr [${lower:$key:26}${upper:$key:26} [${lower:0:26}${upper:0:26}]` sama seperti untuk enkripsi, hanya saja dibalik.
 
+![alt text](https://github.com/Izzud/SoalShift_modul1_B01/blob/master/img/4decrypt-1.png)
+![alt text](https://github.com/Izzud/SoalShift_modul1_B01/blob/master/img/4decrypt-2.png)
 
 ###### [Script dekripsi](../blob/master/SoalShift_modul1_B01/soal4-decrypt.sh)
 
@@ -243,6 +254,9 @@ Sebelumnya, harus dibuat direktori baru untuk menampung file output, dengan comm
 - `/cron/ && !/bash/` string/pattern yang akan dicari. `!` menandakan **kecuali** pattern `bash`
 - `NF < 13` berarti kolom tidak boleh melibihi 13
 - `~/modul1/syslog` file output akan disimpan di direktori `/home/izzud/modul1` dengan nama `syslog`
+
+![alt text](https://github.com/Izzud/SoalShift_modul1_B01/blob/master/img/5-1.png)
+![alt text](https://github.com/Izzud/SoalShift_modul1_B01/blob/master/img/5-2.png)
 
 ###### [Script no 5](../blob/master/SoalShift_modul1_B01/soal5.sh)
 
